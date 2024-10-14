@@ -166,9 +166,9 @@ if __name__ == '__main__':
     with open(os.path.join(rvc_models_dir, 'public_models.json'), encoding='utf8') as infile:
         public_models = json.load(infile)
 
-    with gr.Blocks(title='AICoverGenWebUI') as app:
+    with gr.Blocks(title='AIVoice Generator') as app:
 
-        gr.Label('AICoverGen WebUI created with ❤️', show_label=False)
+        gr.Label('AIVoice WebUI created by Nishanth', show_label=False)
 
         # main tab
         with gr.Tab("Generate"):
