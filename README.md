@@ -1,9 +1,6 @@
-# AICoverGen
+# AIVoice Generator
 An autonomous pipeline to create covers with any RVC v2 trained AI voice from YouTube videos or a local audio file. For developers who may want to add a singing functionality into their AI assistant/chatbot/vtuber, or for people who want to hear their favourite characters sing their favourite song.
 
-Showcase: https://www.youtube.com/watch?v=2qZuE4WM7CM
-
-Setup Guide: https://www.youtube.com/watch?v=pdlhk4vVHQk
 
 ![](images/webui_generate.png?raw=true)
 
@@ -44,11 +41,7 @@ Then follow the instructions in the notebook to run the webui.
 
 For those without a powerful enough NVIDIA GPU, you may try AICoverGen out using Google Colab.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SociallyIneptWeeb/AICoverGen/blob/main/AICoverGen_colab.ipynb)
-
-For those who face issues with Google Colab notebook disconnecting after a few minutes, here's an alternative that doesn't use the WebUI.
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardha27/AICoverGen-NoUI-Colab/blob/main/CoverGen_No_UI.ipynb)
+[![Open In Colab](https://colab.research.google.com/drive/14ZiZcCOfqqTLoc7F-mXqs_nvTJ9HnOtn#scrollTo=odzpJHpr_PaF)
 
 For those who want to run this locally, follow the setup guide below.
 
@@ -66,13 +59,13 @@ Follow the instructions [here](https://www.hostinger.com/tutorials/how-to-instal
 
 Follow the instructions [here](https://www.tutorialexample.com/a-step-guide-to-install-sox-sound-exchange-on-windows-10-python-tutorial/) to install sox and add it to your Windows path environment.
 
-### Clone AICoverGen repository
+### Clone AIVoice repository
 
 Open a command line window and run these commands to clone this entire repository and install the additional dependencies required.
 
 ```
-git clone https://github.com/SociallyIneptWeeb/AICoverGen
-cd AICoverGen
+git clone https://github.com/Nishnathmegan/AIVoice
+cd AIVoice
 pip install -r requirements.txt
 ```
 
@@ -139,22 +132,6 @@ Once all Main Options are filled in, click `Generate` and the AI generated cover
 
 Unzip (if needed) and transfer the `.pth` and `.index` files to a new folder in the [rvc_models](rvc_models) directory. Each folder should only contain one `.pth` and one `.index` file.
 
-The directory structure should look something like this:
-```
-├── rvc_models
-│   ├── John
-│   │   ├── JohnV2.pth
-│   │   └── added_IVF2237_Flat_nprobe_1_v2.index
-│   ├── May
-│   │   ├── May.pth
-│   │   └── added_IVF2237_Flat_nprobe_1_v2.index
-│   ├── MODELS.txt
-│   └── hubert_base.pt
-├── mdxnet_models
-├── song_output
-└── src
- ```
-
 ### Running the pipeline
 
 To run the AI cover generation pipeline using the command line, run the following command.
@@ -203,6 +180,3 @@ The use of the converted voice for the following purposes is prohibited.
 
 * Fraudulent purposes that lead to identity theft or fraudulent phone calls.
 
-## Disclaimer
-
-I am not liable for any direct, indirect, consequential, incidental, or special damages arising out of or in any way connected with the use/misuse or inability to use this software.
